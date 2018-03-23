@@ -20,18 +20,18 @@ public class WebController {
 
 	        Employee employee1 = new Employee();
 	        employee1.setEmployeeId("11111");
-	        employee1.setEmployeeName("Dineh Rajput");
+	        employee1.setEmployeeName("Максим");
 	        employee1.setJobType("Sr.Software Engineer");
 	        employee1.setSalary(70000l);
-	        employee1.setAddress("Noida");
+	        employee1.setAddress("Нью Йорк");
 	        employees.put(employee1.getEmployeeId(), employee1);
 
 	        Employee employee2 = new Employee();
 	        employee2.setEmployeeId("22222");
-	        employee2.setEmployeeName("Abhishek");
+	        employee2.setEmployeeName("Алексей");
 	        employee2.setJobType("Marketing");
 	        employee2.setSalary(50000l);
-	        employee2.setAddress("New Delhi");
+	        employee2.setAddress("Краснодар");
 	        employees.put(employee2.getEmployeeId(), employee2);
 
 	    }
@@ -40,7 +40,7 @@ public class WebController {
 	    @Path("/hello")
 	    @Produces("text/plain")
 	    public String hello(){
-	        return "Hello World!!! dineshonjava";
+	        return "Hello World!!!";
 	    }
 
 	    @GET

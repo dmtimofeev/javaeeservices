@@ -10,7 +10,7 @@ import java.util.List;
 public interface Idea {
 
     @WebMethod
-    IdeaItem getIdea(Integer id);
+    IdeaItem getIdea(Integer id) throws Exception;
 
     @WebMethod
     List<IdeaItem> getListIdea();

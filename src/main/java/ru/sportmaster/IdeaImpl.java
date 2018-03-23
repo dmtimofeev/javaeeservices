@@ -13,7 +13,11 @@ public class IdeaImpl implements Idea {
     private List<IdeaItem> ideaList = new ArrayList<IdeaItem>();
 
     @WebMethod
-    public IdeaItem getIdea(Integer id) {
+    public IdeaItem getIdea(Integer id) throws Exception {
+        if (id < 0 || id > ideaList.size() - 1) {
+            throw new Exception("Нет такого элемента");
+        }
+
         return ideaList.get(id);
     }
 

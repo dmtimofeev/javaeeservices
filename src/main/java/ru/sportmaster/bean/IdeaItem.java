@@ -9,7 +9,7 @@ public class IdeaItem {
     private String user;
     private String idea;
 
-    @XmlElement
+    @XmlElement(required = true)
     public String getUser() {
         return user;
     }
@@ -18,7 +18,7 @@ public class IdeaItem {
         this.user = user;
     }
 
-    @XmlElement
+    @XmlElement(required = true)
     public String getIdea() {
         return idea;
     }
